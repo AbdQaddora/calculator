@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Spartan', sans-serif; -->
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Calc</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>calc</h2>
+            <div class="themes">
+                <p>THEME</p>
+                <div>
+                    <div class="themeNumbers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <div class="slider" onclick="themeChanger()">
+                        <div class="indecatror"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secreen">
+            <div class="result"></div>
+        </div>
+        <div class="buttonsContainer">
+            <button class="numbers" onclick="AddTOScreen(7)">7</button>
+            <button class="numbers" onclick="AddTOScreen(8)">8</button>
+            <button class="numbers" onclick="AddTOScreen(9)">9</button>
+            <button class="numbers del" onclick="del()">DEL</button>
+            <button class="numbers" onclick="AddTOScreen(4)">4</button>
+            <button class="numbers" onclick="AddTOScreen(5)">5</button>
+            <button class="numbers" onclick="AddTOScreen(6)">6</button>
+            <button class="numbers" onclick="AddTOScreen(' + ')">+</button>
+            <button class="numbers" onclick="AddTOScreen(1)">1</button>
+            <button class="numbers" onclick="AddTOScreen(2)">2</button>
+            <button class="numbers" onclick="AddTOScreen(3)">3</button>
+            <button class="numbers" onclick="AddTOScreen(' - ')">-</button>
+            <button class="numbers" onclick="AddTOScreen('.')">.</button>
+            <button class="numbers" onclick="AddTOScreen(0)">0</button>
+            <button class="numbers" onclick="AddTOScreen(' / ')">/</button>
+            <button class="numbers" onclick="AddTOScreen(' x ')">x</button>
+            <button class="numbers half" onclick="clearScreen()">RESET</button>
+            <button class="numbers half" onclick="equal()">=</button>
+        </div>
+
+    </div>
+    <script src="./javaScript/main.js"></script>
+</body>
+
+</html>

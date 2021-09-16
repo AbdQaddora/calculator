@@ -100,6 +100,7 @@ function del() {
 
 function equal() {
   var currentValue = document.querySelector(".result").innerHTML;
+  currentValue = currentValue.replaceAll("x" , "*");
   currentValue = eval(currentValue);
   document.querySelector(".result").innerHTML = currentValue;
 }
